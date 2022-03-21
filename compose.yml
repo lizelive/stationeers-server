@@ -1,0 +1,15 @@
+services:
+  stationeers:
+    build:
+      context: .
+    ports:
+      - protocol: udp
+        published: 27500
+        target: 27500
+      - protocol: tcp
+        published: 27500
+        target: 27500
+      - protocol: udp
+        published: 27015
+        target: 27015
+version: '3.9'
